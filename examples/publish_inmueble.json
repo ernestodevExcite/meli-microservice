@@ -1,0 +1,40 @@
+{
+  "id_cms": "cms-001",
+  "tipo": "inmueble",
+  "meli_payload": {
+    "category_id": "MLM79255",
+    "title": "Departamento 2 ambientes Condesa",
+    "price": 3500000,
+    "currency_id": "MXN",
+    "buying_mode": "classified",
+    "listing_type_id": "silver",
+    "condition": "used",
+    "channels": ["marketplace"],
+    "pictures": [
+      {"source": "https://s3.amazonaws.com/cms/foto1.jpg"},
+      {"source": "https://s3.amazonaws.com/cms/foto2.jpg"}
+    ],
+    "seller_contact": {
+      "contact": "Ana Lopez",
+      "email": "ana@inmobiliaria.com",
+      "phone": "5512345678"
+    },
+    "location": {
+      "address_line": "Av. Amsterdam 120",
+      "state_id": "MX-DIF",
+      "neighborhood_id": "TUxNQ0NPTkQ0MjM",
+      "latitude": 19.4138,
+      "longitude": -99.1716,
+      "zip_code": "06140"
+    },
+    "attributes": [
+      {"id": "OPERATION", "value_id": "242075", "value_name": "Venta"},
+      {"id": "TOTAL_AREA", "value_name": 75},
+      {"id": "COVERED_AREA", "value_name": 65},
+      {"id": "BEDROOMS", "value_name": 2},
+      {"id": "FULL_BATHROOMS", "value_name": 1},
+      {"id": "PARKING_SPACES", "value_name": 1},
+      {"id": "PROPERTY_TYPE", "value_id": "242062", "value_name": "Departamento"}
+    ]
+  }
+}

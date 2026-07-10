@@ -1,0 +1,53 @@
+{
+  "id_cms": "cms-002",
+  "tipo": "desarrollo",
+  "meli_payload": {
+    "category_id": "MLM1459",
+    "title": "Residencial Polanco - Torreon",
+    "price": 1500000,
+    "currency_id": "MXN",
+    "buying_mode": "classified",
+    "listing_type_id": "gold",
+    "condition": "new",
+    "channels": ["marketplace"],
+    "pictures": [
+      {"source": "https://s3.amazonaws.com/cms/render_fachada.jpg"},
+      {"source": "https://s3.amazonaws.com/cms/plano_A101.jpg"}
+    ],
+    "seller_contact": {
+      "contact": "Ventas Residencial Polanco",
+      "email": "ventas@residencialpolanco.mx",
+      "phone": "5598765432"
+    },
+    "location": {
+      "address_line": "Av. Presidente Masaryk 0",
+      "state_id": "MX-DIF"
+    },
+    "attributes": [
+      {"id": "OPERATION", "value_id": "242075", "value_name": "Venta"},
+      {"id": "DEVELOPMENT_NAME", "value_name": "Residencial Polanco"}
+    ],
+    "variations": [
+      {
+        "price": 1500000,
+        "available_quantity": 1,
+        "attribute_combinations": [
+          {"id": "UNIT_TYPE", "value_name": "Departamento"},
+          {"id": "TOTAL_AREA", "value_name": 65},
+          {"id": "BEDROOMS", "value_name": 2}
+        ],
+        "picture_ids": ["123_ML_abc_fachada"]
+      },
+      {
+        "price": 2100000,
+        "available_quantity": 1,
+        "attribute_combinations": [
+          {"id": "UNIT_TYPE", "value_name": "Departamento"},
+          {"id": "TOTAL_AREA", "value_name": 95},
+          {"id": "BEDROOMS", "value_name": 3}
+        ],
+        "picture_ids": ["123_ML_xyz_plano_A101"]
+      }
+    ]
+  }
+}
