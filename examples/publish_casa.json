@@ -1,0 +1,124 @@
+{
+  "id_cms": "cms-001",
+  "tipo": "desarrollo",
+  "meli_payload": {
+    "category_id": "MLM170531",
+    "title": "Casa En Venta, Mérida, Los Héroes Mérida (Mérida)",
+    "price": 1368000,
+    "currency_id": "MXN",
+    "buying_mode": "classified",
+    "listing_type_id": "silver",
+    "available_quantity": 4,
+    "condition": "new",
+    "channels": ["marketplace"],
+    "pictures": [
+      {"source": "https://firebasestorage.googleapis.com/v0/b/sadasi-integraciones.appspot.com/o/real-state-developments%2F62cf97390f095629387c7e19%2Flos-heroes-merida.jpg?alt=media&token=b2680086-9abc-42b5-b27a-ad2684857df3"},
+      {"source": "https://firebasestorage.googleapis.com/v0/b/sadasi-integraciones.appspot.com/o/real-state-developments%2F62cf97390f095629387c7e19%2Fgallery%2Flos-heroes-merida-merida-yucatan-vista-panoramica-amenidades.jpg?alt=media&token=88f7d51b-bc8b-40ad-a91b-67978deb5bef"},
+      {"source": "https://firebasestorage.googleapis.com/v0/b/sadasi-integraciones.appspot.com/o/real-state-developments%2F62cf97390f095629387c7e19%2Fgallery%2Flos-heroes-merida-merida-yucatan-vista-panoramica-desarrollo.jpg?alt=media&token=fadc461e-d87d-4713-b399-de4c7d1a37b9"}
+    ],
+    "seller_contact": {
+      "contact": "",
+      "email": "plataformas_sadasi@datavoice.com.mx",
+      "phone": "5651202910",
+      "country_code": "52",
+      "area_code": "52",
+      "phone2": "5651202910",
+      "country_code2": "",
+      "area_code2": "52",
+      "other_info": ""
+    },
+    "location": {
+      "address_line": "Periférico Ote. Esq. Av. 149, Mérida, Yucatán.",
+      "city_id": "TUxNQ03JUjU5NTY",
+      "state_id": "TUxNUFlVQzc1OTk",
+      "country_id": "MX",
+      "latitude": 20.9673702,
+      "longitude": -89.5925857
+    },
+    "attributes": [
+      {"id": "OPERATION", "value_id": "242075", "value_name": "Venta"},
+      {"id": "OPERATION_SUBTYPE", "value_id": "245034", "value_name": "Desarrollo"},
+      {"id": "PROPERTY_TYPE", "value_id": "242060", "value_name": "Casa"},
+      {"id": "DEVELOPMENT_NAME", "value_name": "Los Héroes Mérida (Mérida)"},
+      {"id": "POSSESSION_DATE", "value_name": "0"},
+      {"id": "POSSESSION_STATUS", "value_id": "242413", "value_name": "Entrega inmediata"},
+      {"id": "IS_PROPERTY_IN_AUCTION", "value_id": "242084", "value_name": "No"},
+      {"id": "ITEM_CONDITION", "value_id": "2230284", "value_name": "Nuevo"},
+      {"id": "WITH_VIRTUAL_TOUR", "value_id": "242084", "value_name": "No"},
+      {"id": "HAS_MULTIPURPOSE_ROOM", "value_id": "242085", "value_name": "Sí"},
+      {"id": "HAS_GARDEN", "value_id": "242085", "value_name": "Sí"},
+      {"id": "HAS_KITCHEN", "value_id": "242085", "value_name": "Sí"},
+      {"id": "HAS_GYM", "value_id": "242085", "value_name": "Sí"},
+      {"id": "HAS_PLAYGROUND", "value_id": "242085", "value_name": "Sí"},
+      {"id": "HAS_SECURITY", "value_id": "242085", "value_name": "Sí"},
+      {"id": "MAX_BATHROOMS", "value_name": "1"},
+      {"id": "MAX_BEDROOMS", "value_name": "3"},
+      {"id": "MAX_COVERED_AREA", "value_name": "113 m²", "values": [{"name": "113 m²", "struct": {"number": 113, "unit": "m²"}}]},
+      {"id": "MAX_TOTAL_AREA", "value_name": "113 m²", "values": [{"name": "113 m²", "struct": {"number": 113, "unit": "m²"}}]},
+      {"id": "MIN_BATHROOMS", "value_name": "1"},
+      {"id": "MIN_BEDROOMS", "value_name": "2"},
+      {"id": "MIN_COVERED_AREA", "value_name": "65 m²", "values": [{"name": "65 m²", "struct": {"number": 65, "unit": "m²"}}]},
+      {"id": "MIN_TOTAL_AREA", "value_name": "65 m²", "values": [{"name": "65 m²", "struct": {"number": 65, "unit": "m²"}}]},
+      {"id": "BALCONY_AREA", "value_name": "0 m²", "values": [{"name": "0 m²", "struct": {"number": 0, "unit": "m²"}}]},
+      {"id": "LOGO_ID", "value_name": "774913-MLM87909939287_072025"}
+    ],
+    "variations": [
+      {
+        "price": 1368000,
+        "available_quantity": 1,
+        "attribute_combinations": [
+          {"id": "FULL_BATHROOMS", "value_name": "1"},
+          {"id": "PARKING_LOTS", "value_name": "2"},
+          {"id": "UNIT_NAME", "value_name": "1.0"},
+          {"id": "MODEL_NAME", "value_name": "Modelo Izamal"},
+          {"id": "BEDROOMS", "value_name": "2"},
+          {"id": "COVERED_AREA", "value_name": "65 m²", "values": [{"name": "65 m²", "struct": {"number": 65, "unit": "m²"}}]},
+          {"id": "TOTAL_AREA", "value_name": "65 m²", "values": [{"name": "65 m²", "struct": {"number": 65, "unit": "m²"}}]}
+        ],
+        "picture_ids": ["https://firebasestorage.googleapis.com/v0/b/sadasi-integraciones.appspot.com/o/products%2F62d77ee93db75117d85030f0%2Flos-heroes-merida-merida-yucatan-fachada-modelo-Izamal.jpg?alt=media&token=78fb67fe-c0fc-480f-90b1-995c0e3b62bc"]
+      },
+      {
+        "price": 1516000,
+        "available_quantity": 1,
+        "attribute_combinations": [
+          {"id": "FULL_BATHROOMS", "value_name": "1"},
+          {"id": "PARKING_LOTS", "value_name": "2"},
+          {"id": "UNIT_NAME", "value_name": "10.0"},
+          {"id": "MODEL_NAME", "value_name": "Modelo Uxmal"},
+          {"id": "BEDROOMS", "value_name": "2"},
+          {"id": "COVERED_AREA", "value_name": "75 m²", "values": [{"name": "75 m²", "struct": {"number": 75, "unit": "m²"}}]},
+          {"id": "TOTAL_AREA", "value_name": "75 m²", "values": [{"name": "75 m²", "struct": {"number": 75, "unit": "m²"}}]}
+        ],
+        "picture_ids": ["https://firebasestorage.googleapis.com/v0/b/sadasi-integraciones.appspot.com/o/products%2F62d77ee93db75117d85030f1%2Flos-heroes-merida-yucatan-fachada-modelo-uxmal.jpg?alt=media&token=6850dc2e-b808-496c-9ee6-c1c1682771f8"]
+      },
+      {
+        "price": 2051000,
+        "available_quantity": 1,
+        "attribute_combinations": [
+          {"id": "FULL_BATHROOMS", "value_name": "1"},
+          {"id": "PARKING_LOTS", "value_name": "2"},
+          {"id": "UNIT_NAME", "value_name": "16.0"},
+          {"id": "MODEL_NAME", "value_name": "Casa Modelo Valladolid"},
+          {"id": "BEDROOMS", "value_name": "3"},
+          {"id": "COVERED_AREA", "value_name": "99 m²", "values": [{"name": "99 m²", "struct": {"number": 99, "unit": "m²"}}]},
+          {"id": "TOTAL_AREA", "value_name": "99 m²", "values": [{"name": "99 m²", "struct": {"number": 99, "unit": "m²"}}]}
+        ],
+        "picture_ids": ["https://firebasestorage.googleapis.com/v0/b/sadasi-integraciones.appspot.com/o/products%2F62d77ee93db75117d85030f3%2Flos-heroes-merida-merida-yucatan-fachada-modelo-Valladolid.jpg?alt=media&token=01d68f62-1c0a-4772-bd98-2c56fea8ac68"]
+      },
+      {
+        "price": 2265000,
+        "available_quantity": 1,
+        "attribute_combinations": [
+          {"id": "FULL_BATHROOMS", "value_name": "1"},
+          {"id": "PARKING_LOTS", "value_name": "2"},
+          {"id": "UNIT_NAME", "value_name": "21.0"},
+          {"id": "MODEL_NAME", "value_name": "Casa Modelo Mayapan"},
+          {"id": "BEDROOMS", "value_name": "3"},
+          {"id": "COVERED_AREA", "value_name": "113 m²", "values": [{"name": "113 m²", "struct": {"number": 113, "unit": "m²"}}]},
+          {"id": "TOTAL_AREA", "value_name": "113 m²", "values": [{"name": "113 m²", "struct": {"number": 113, "unit": "m²"}}]}
+        ],
+        "picture_ids": ["https://firebasestorage.googleapis.com/v0/b/sadasi-integraciones.appspot.com/o/products%2F62d77ee93db75117d85030f2%2Flos-heroes-merida-merida-yucatan-fachada-modelo-Mayapan.jpg?alt=media&token=345ed989-1933-4e98-a885-9d26539d556e"]
+      }
+    ]
+  }
+}

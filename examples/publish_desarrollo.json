@@ -2,51 +2,116 @@
   "id_cms": "cms-002",
   "tipo": "desarrollo",
   "meli_payload": {
-    "category_id": "MLM1459",
-    "title": "Residencial Polanco - Torreon",
-    "price": 1500000,
+    "category_id": "MLM170376",
+    "title": "Departamento En Venta, Puebla, Nasara, item de prueba, no ofertar",
+    "price": 1208000,
     "currency_id": "MXN",
     "buying_mode": "classified",
     "listing_type_id": "gold",
+    "available_quantity": 1,
     "condition": "new",
     "channels": ["marketplace"],
     "pictures": [
-      {"source": "https://s3.amazonaws.com/cms/render_fachada.jpg"},
-      {"source": "https://s3.amazonaws.com/cms/plano_A101.jpg"}
+      {"source": "https://firebasestorage.googleapis.com/v0/b/sadasi-integraciones.appspot.com/o/real-state-developments%2Ftest%2Fnasara-departamentos-puebla.jpg?alt=media&token=01736aea-7fe8-4925-a971-1032b6675bc5"},
+      {"source": "https://firebasestorage.googleapis.com/v0/b/sadasi-integraciones.appspot.com/o/real-state-developments%2F67fd72db9b32495c01ca5f8c%2Fgallery%2Fnasara-amenidades-area-infantil.jpg?alt=media&token=25dab3b8-ce4f-46a7-88e7-7493ae1890d7"}
     ],
     "seller_contact": {
-      "contact": "Ventas Residencial Polanco",
-      "email": "ventas@residencialpolanco.mx",
-      "phone": "5598765432"
+      "contact": "",
+      "email": "plataformas_sadasi@datavoice.com.mx",
+      "phone": "5651202910",
+      "country_code": "52",
+      "area_code": "52",
+      "phone2": "5651202910",
+      "country_code2": "",
+      "area_code2": "52",
+      "other_info": ""
     },
     "location": {
-      "address_line": "Av. Presidente Masaryk 0",
-      "state_id": "MX-DIF"
+      "address_line": "Apulco, Bosques Amalucan, 72310 Heroica Puebla de Zaragoza",
+      "city_id": "TUxNQ1BVRTEwOTA",
+      "state_id": "TUxNUFBVRTQ4ODM",
+      "country_id": "MX",
+      "latitude": 19.0505814,
+      "longitude": -98.1300856
     },
     "attributes": [
       {"id": "OPERATION", "value_id": "242075", "value_name": "Venta"},
-      {"id": "DEVELOPMENT_NAME", "value_name": "Residencial Polanco"}
+      {"id": "OPERATION_SUBTYPE", "value_id": "245034", "value_name": "Desarrollo"},
+      {"id": "PROPERTY_TYPE", "value_id": "242062", "value_name": "Departamento"},
+      {"id": "DEVELOPMENT_NAME", "value_name": "Nasara (Puebla)"},
+      {"id": "POSSESSION_DATE", "value_name": "0"},
+      {"id": "POSSESSION_STATUS", "value_id": "242413", "value_name": "Entrega inmediata"},
+      {"id": "IS_PROPERTY_IN_AUCTION", "value_id": "242084", "value_name": "No"},
+      {"id": "ITEM_CONDITION", "value_id": "2230284", "value_name": "Nuevo"},
+      {"id": "WITH_VIRTUAL_TOUR", "value_id": "242084", "value_name": "No"},
+      {"id": "HAS_GARDEN", "value_id": "242085", "value_name": "Sí"},
+      {"id": "HAS_KITCHEN", "value_id": "242085", "value_name": "Sí"},
+      {"id": "HAS_GYM", "value_id": "242085", "value_name": "Sí"},
+      {"id": "HAS_MULTIPURPOSE_ROOM", "value_id": "242085", "value_name": "Sí"},
+      {"id": "HAS_PLAYGROUND", "value_id": "242085", "value_name": "Sí"},
+      {"id": "HAS_SECURITY", "value_id": "242085", "value_name": "Sí"},
+      {"id": "MAX_BATHROOMS", "value_name": "1"},
+      {"id": "MAX_BEDROOMS", "value_name": "2"},
+      {"id": "MAX_COVERED_AREA", "value_name": "57 m²", "values": [{"name": "57 m²", "struct": {"number": 57, "unit": "m²"}}]},
+      {"id": "MAX_TOTAL_AREA", "value_name": "56.06 m²", "values": [{"name": "56.06 m²", "struct": {"number": 56.06, "unit": "m²"}}]},
+      {"id": "MIN_BATHROOMS", "value_name": "1"},
+      {"id": "MIN_BEDROOMS", "value_name": "2"},
+      {"id": "MIN_COVERED_AREA", "value_name": "57 m²", "values": [{"name": "57 m²", "struct": {"number": 57, "unit": "m²"}}]},
+      {"id": "BALCONY_AREA", "value_name": "0 m²", "values": [{"name": "0 m²", "struct": {"number": 0, "unit": "m²"}}]},
+      {"id": "LOGO_ID", "value_name": "789632-MLM87912857783_072025"}
     ],
     "variations": [
       {
-        "price": 1500000,
+        "price": 1398000,
         "available_quantity": 1,
         "attribute_combinations": [
-          {"id": "UNIT_TYPE", "value_name": "Departamento"},
-          {"id": "TOTAL_AREA", "value_name": 65},
-          {"id": "BEDROOMS", "value_name": 2}
+          {"id": "FULL_BATHROOMS", "value_name": "1"},
+          {"id": "PARKING_LOTS", "value_name": "1"},
+          {"id": "UNIT_NAME", "value_name": "1.0"},
+          {"id": "MODEL_NAME", "value_name": "Modelo Hausa PB"},
+          {"id": "BEDROOMS", "value_name": "2"},
+          {"id": "COVERED_AREA", "value_name": "57 m²", "values": [{"name": "57 m²", "struct": {"number": 57, "unit": "m²"}}]}
         ],
-        "picture_ids": ["123_ML_abc_fachada"]
+        "picture_ids": ["696581-MLM112463369301_052026"]
       },
       {
-        "price": 2100000,
+        "price": 1298000,
         "available_quantity": 1,
         "attribute_combinations": [
-          {"id": "UNIT_TYPE", "value_name": "Departamento"},
-          {"id": "TOTAL_AREA", "value_name": 95},
-          {"id": "BEDROOMS", "value_name": 3}
+          {"id": "FULL_BATHROOMS", "value_name": "1"},
+          {"id": "PARKING_LOTS", "value_name": "1"},
+          {"id": "UNIT_NAME", "value_name": "2.0"},
+          {"id": "MODEL_NAME", "value_name": "Modelo Hausa N1"},
+          {"id": "BEDROOMS", "value_name": "2"},
+          {"id": "COVERED_AREA", "value_name": "57 m²", "values": [{"name": "57 m²", "struct": {"number": 57, "unit": "m²"}}]}
         ],
-        "picture_ids": ["123_ML_xyz_plano_A101"]
+        "picture_ids": ["https://firebasestorage.googleapis.com/v0/b/sadasi-integraciones.appspot.com/o/products%2F67fd980af20c9c44ea0158c1%2Fdepartamento-modelo-hausa-nasara.jpg?alt=media&token=97194c63-45ac-47e2-bcda-cc0964b327a7"]
+      },
+      {
+        "price": 1228000,
+        "available_quantity": 1,
+        "attribute_combinations": [
+          {"id": "FULL_BATHROOMS", "value_name": "1"},
+          {"id": "PARKING_LOTS", "value_name": "1"},
+          {"id": "UNIT_NAME", "value_name": "3.0"},
+          {"id": "MODEL_NAME", "value_name": "Modelo Hausa N2"},
+          {"id": "BEDROOMS", "value_name": "2"},
+          {"id": "COVERED_AREA", "value_name": "57 m²", "values": [{"name": "57 m²", "struct": {"number": 57, "unit": "m²"}}]}
+        ],
+        "picture_ids": ["https://firebasestorage.googleapis.com/v0/b/sadasi-integraciones.appspot.com/o/products%2F67fd99c8f20c9c44ea015b10%2Fgallery%2Fcocina-departamento-modelo-hausa.jpg?alt=media&token=41776028-802d-4f5f-a6f8-32c2e728479c"]
+      },
+      {
+        "price": 1208000,
+        "available_quantity": 1,
+        "attribute_combinations": [
+          {"id": "FULL_BATHROOMS", "value_name": "1"},
+          {"id": "PARKING_LOTS", "value_name": "1"},
+          {"id": "UNIT_NAME", "value_name": "4.0"},
+          {"id": "MODEL_NAME", "value_name": "Modelo Hausa N3"},
+          {"id": "BEDROOMS", "value_name": "2"},
+          {"id": "COVERED_AREA", "value_name": "57 m²", "values": [{"name": "57 m²", "struct": {"number": 57, "unit": "m²"}}]}
+        ],
+        "picture_ids": ["https://firebasestorage.googleapis.com/v0/b/sadasi-integraciones.appspot.com/o/products%2F67fd99eaf20c9c44ea015b2b%2Fgallery%2Fsala-comedor-departamento-modelo-hausa.jpg?alt=media&token=7949f764-572a-4c62-9b5a-0ad5ca23fc20"]
       }
     ]
   }

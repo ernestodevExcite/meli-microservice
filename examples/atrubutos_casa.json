@@ -1,0 +1,2316 @@
+[
+    {
+        "id": "CONTACT_SCHEDULE",
+        "name": "Horario de contacto",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "string",
+        "value_max_length": 255,
+        "attribute_group_id": "FIND",
+        "attribute_group_name": "Ficha técnica"
+    },
+    {
+        "id": "PROPERTY_TYPE",
+        "name": "Inmueble",
+        "tags": {
+            "fixed": true,
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "list",
+        "values": [
+            {
+                "id": "242060",
+                "name": "Casa"
+            }
+        ],
+        "attribute_group_id": "MAIN",
+        "attribute_group_name": "Principales"
+    },
+    {
+        "id": "PROPERTY_AGE",
+        "name": "Antigüedad",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number_unit",
+        "value_max_length": 255,
+        "allowed_units": [
+            {
+                "id": "años",
+                "name": "años"
+            }
+        ],
+        "default_unit": "años",
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "PROPERTY_CODE",
+        "name": "Código de la propiedad",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "string",
+        "value_max_length": 255,
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "OPERATION",
+        "name": "Operación",
+        "tags": {
+            "fixed": true,
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "list",
+        "values": [
+            {
+                "id": "242075",
+                "name": "Venta"
+            }
+        ],
+        "attribute_group_id": "MAIN",
+        "attribute_group_name": "Principales"
+    },
+    {
+        "id": "OPERATION_SUBTYPE",
+        "name": "Subtipo de operación",
+        "tags": {
+            "fixed": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "list",
+        "values": [
+            {
+                "id": "245034",
+                "name": "Desarrollo"
+            }
+        ],
+        "attribute_group_id": "MAIN",
+        "attribute_group_name": "Principales"
+    },
+    {
+        "id": "MODEL_NAME",
+        "name": "Nombre del modelo",
+        "tags": {
+            "allow_variations": true,
+            "required": true,
+            "catalog_listing_required": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "string",
+        "value_max_length": 255,
+        "attribute_group_id": "MAIN_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características principales del modelo"
+    },
+    {
+        "id": "COVERED_AREA",
+        "name": "Superficie construida",
+        "tags": {
+            "allow_variations": true,
+            "required": true,
+            "catalog_listing_required": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number_unit",
+        "value_max_length": 255,
+        "allowed_units": [
+            {
+                "id": "m²",
+                "name": "m²"
+            }
+        ],
+        "default_unit": "m²",
+        "attribute_group_id": "MAIN_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características principales del modelo"
+    },
+    {
+        "id": "MIN_COVERED_AREA",
+        "name": "Cantidad mínima de metros cubiertos",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number_unit",
+        "value_max_length": 255,
+        "allowed_units": [
+            {
+                "id": "m²",
+                "name": "m²"
+            }
+        ],
+        "default_unit": "m²",
+        "attribute_group_id": "FIND",
+        "attribute_group_name": "Ficha técnica"
+    },
+    {
+        "id": "LAND_AREA",
+        "name": "Superficie de terreno",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number_unit",
+        "value_max_length": 255,
+        "allowed_units": [
+            {
+                "id": "ha",
+                "name": "ha"
+            },
+            {
+                "id": "m²",
+                "name": "m²"
+            }
+        ],
+        "default_unit": "m²",
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "BALCONY_AREA",
+        "name": "Superficie de balcón",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number_unit",
+        "value_max_length": 255,
+        "allowed_units": [
+            {
+                "id": "\"²",
+                "name": "\"²"
+            },
+            {
+                "id": "cm²",
+                "name": "cm²"
+            },
+            {
+                "id": "ha",
+                "name": "ha"
+            },
+            {
+                "id": "in²",
+                "name": "in²"
+            },
+            {
+                "id": "mm²",
+                "name": "mm²"
+            },
+            {
+                "id": "m²",
+                "name": "m²"
+            }
+        ],
+        "default_unit": "m²",
+        "attribute_group_id": "DFLT",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "BEDROOMS",
+        "name": "Recámaras",
+        "tags": {
+            "allow_variations": true,
+            "required": true,
+            "catalog_listing_required": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number",
+        "value_max_length": 18,
+        "attribute_group_id": "MAIN_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características principales del modelo"
+    },
+    {
+        "id": "MIN_BEDROOMS",
+        "name": "Cantidad mínima de recámaras",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number",
+        "value_max_length": 18,
+        "attribute_group_id": "FIND",
+        "attribute_group_name": "Ficha técnica"
+    },
+    {
+        "id": "ROOMS",
+        "name": "Ambientes",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number",
+        "value_max_length": 18,
+        "attribute_group_id": "DFLT",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "MIN_ROOMS",
+        "name": "Cantidad mínima de ambientes",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number",
+        "value_max_length": 18,
+        "attribute_group_id": "DFLT",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "FULL_BATHROOMS",
+        "name": "Baños",
+        "tags": {
+            "allow_variations": true,
+            "required": true,
+            "catalog_listing_required": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number",
+        "value_max_length": 18,
+        "attribute_group_id": "MAIN_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características principales del modelo"
+    },
+    {
+        "id": "MIN_BATHROOMS",
+        "name": "Cantidad mínima de baños",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number",
+        "value_max_length": 18,
+        "attribute_group_id": "FIND",
+        "attribute_group_name": "Ficha técnica"
+    },
+    {
+        "id": "FACING",
+        "name": "Orientación",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "list",
+        "values": [
+            {
+                "id": "242328",
+                "name": "Sur"
+            },
+            {
+                "id": "242330",
+                "name": "Poniente"
+            },
+            {
+                "id": "242327",
+                "name": "Norte"
+            },
+            {
+                "id": "242329",
+                "name": "Oriente"
+            }
+        ],
+        "attribute_group_id": "DFLT",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "PARKING_LOTS",
+        "name": "Estacionamientos",
+        "tags": {
+            "allow_variations": true,
+            "required": true,
+            "catalog_listing_required": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number",
+        "value_max_length": 18,
+        "attribute_group_id": "MODEL_UNITS",
+        "attribute_group_name": "Unidades del modelo",
+        "hint": "Si no tiene estacionamientos, indica 0."
+    },
+    {
+        "id": "WAREHOUSES",
+        "name": "Bodegas",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number",
+        "value_max_length": 18,
+        "attribute_group_id": "MODEL_UNITS",
+        "attribute_group_name": "Unidades del modelo"
+    },
+    {
+        "id": "FLOORS",
+        "name": "Cantidad de pisos",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number",
+        "value_max_length": 18,
+        "attribute_group_id": "ADDITIONAL_CHARACTERISTICS_OF_DEVELOPMENT",
+        "attribute_group_name": "Características adicionales del desarrollo"
+    },
+    {
+        "id": "DOWN_PAYMENT_INSTALLMENTS",
+        "name": "Pie en cuotas",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "HAS_GUEST_PARKING",
+        "name": "Estacionamiento para visitantes",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "HAS_AIR_CONDITIONING",
+        "name": "Aire acondicionado",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "ADDITIONAL_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características adicionales del modelo"
+    },
+    {
+        "id": "HAS_ATTIC",
+        "name": "Ático",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "ADDITIONAL_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características adicionales del modelo"
+    },
+    {
+        "id": "HAS_BOILER",
+        "name": "Boiler",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "ADDITIONAL_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características adicionales del modelo"
+    },
+    {
+        "id": "HAS_HEATING",
+        "name": "Calefacción",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "ADDITIONAL_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características adicionales del modelo"
+    },
+    {
+        "id": "HAS_KITCHEN",
+        "name": "Cocina",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "ADDITIONAL_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características adicionales del modelo"
+    },
+    {
+        "id": "HAS_DINNING_ROOM",
+        "name": "Sala comedor",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "ADDITIONAL_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características adicionales del modelo"
+    },
+    {
+        "id": "HAS_MAID_ROOM",
+        "name": "Cuarto de servicio",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "ADDITIONAL_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características adicionales del modelo"
+    },
+    {
+        "id": "HAS_BREAKFAST_BAR",
+        "name": "Desayunador",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "ADDITIONAL_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características adicionales del modelo"
+    },
+    {
+        "id": "HAS_BEDROOM_SUITE",
+        "name": "Dormitorio principal",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "ADDITIONAL_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características adicionales del modelo"
+    },
+    {
+        "id": "HAS_STUDY",
+        "name": "Estudio",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "ADDITIONAL_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características adicionales del modelo"
+    },
+    {
+        "id": "HAS_GARDEN",
+        "name": "Jardín",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "ADDITIONAL_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características adicionales del modelo"
+    },
+    {
+        "id": "HAS_LAUNDRY",
+        "name": "Con lavandería",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "ADDITIONAL_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características adicionales del modelo"
+    },
+    {
+        "id": "HAS_GRILL",
+        "name": "Asador",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "ADDITIONAL_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características adicionales del modelo"
+    },
+    {
+        "id": "HAS_PATIO",
+        "name": "Patio",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "ADDITIONAL_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características adicionales del modelo"
+    },
+    {
+        "id": "HAS_CLOSETS",
+        "name": "Closets",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "HAS_ELECTRIC_GATE_OPENER",
+        "name": "Portón eléctrico",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "ADDITIONAL_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características adicionales del modelo"
+    },
+    {
+        "id": "HAS_ROOF_GARDEN",
+        "name": "Roof garden",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "ADDITIONAL_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características adicionales del modelo"
+    },
+    {
+        "id": "HAS_TV_ROOM",
+        "name": "Sala de TV",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "ADDITIONAL_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características adicionales del modelo"
+    },
+    {
+        "id": "HAS_TERRACE",
+        "name": "Terraza",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "ADDITIONAL_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características adicionales del modelo"
+    },
+    {
+        "id": "HAS_HALF_BATH",
+        "name": "Medio baño",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "ADDITIONAL_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características adicionales del modelo"
+    },
+    {
+        "id": "HAS_DRESSING_ROOM",
+        "name": "Vestidor",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "ADDITIONAL_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características adicionales del modelo"
+    },
+    {
+        "id": "UNIT_NAME",
+        "name": "Nombre de la unidad",
+        "tags": {
+            "allow_variations": true,
+            "required": true,
+            "catalog_listing_required": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "string",
+        "value_max_length": 255,
+        "attribute_group_id": "MODEL_UNITS",
+        "attribute_group_name": "Unidades del modelo"
+    },
+    {
+        "id": "TOTAL_AREA",
+        "name": "Superficie total",
+        "tags": {
+            "allow_variations": true,
+            "required": true,
+            "catalog_listing_required": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number_unit",
+        "value_max_length": 255,
+        "allowed_units": [
+            {
+                "id": "m²",
+                "name": "m²"
+            }
+        ],
+        "default_unit": "m²",
+        "attribute_group_id": "MAIN_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características principales del modelo"
+    },
+    {
+        "id": "LOGO_ID",
+        "name": "Logo",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "string",
+        "value_max_length": 255,
+        "attribute_group_id": "FIND",
+        "attribute_group_name": "Ficha técnica"
+    },
+    {
+        "id": "DEVELOPMENT_NAME",
+        "name": "Nombre del desarrollo",
+        "tags": {
+            "required": true,
+            "catalog_listing_required": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "string",
+        "value_max_length": 255,
+        "attribute_group_id": "MAIN_CHARACTERISTICS_OF_DEVELOPMENT",
+        "attribute_group_name": "Características principales del desarrollo"
+    },
+    {
+        "id": "POSSESSION_STATUS",
+        "name": "Estado del proyecto",
+        "tags": {
+            "required": true,
+            "catalog_listing_required": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "list",
+        "values": [
+            {
+                "id": "242414",
+                "name": "Venta en blanco"
+            },
+            {
+                "id": "242413",
+                "name": "Entrega inmediata"
+            },
+            {
+                "id": "27191631",
+                "name": "Venta en verde"
+            },
+            {
+                "id": "27191632",
+                "name": "Pronta entrega"
+            }
+        ],
+        "attribute_group_id": "MAIN_CHARACTERISTICS_OF_DEVELOPMENT",
+        "attribute_group_name": "Características principales del desarrollo"
+    },
+    {
+        "id": "POSSESSION_DATE",
+        "name": "Fecha de entrega",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "string",
+        "value_max_length": 255,
+        "attribute_group_id": "MAIN_CHARACTERISTICS_OF_DEVELOPMENT",
+        "attribute_group_name": "Características principales del desarrollo"
+    },
+    {
+        "id": "UNITS",
+        "name": "Unidades totales",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number",
+        "value_max_length": 18,
+        "attribute_group_id": "MAIN_CHARACTERISTICS_OF_DEVELOPMENT",
+        "attribute_group_name": "Características principales del desarrollo"
+    },
+    {
+        "id": "HAS_PLAYGROUND",
+        "name": "Área de juegos infantiles",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "COMOYAMEN",
+        "attribute_group_name": "Comodidades y amenities"
+    },
+    {
+        "id": "HAS_BARBECUE_AREA",
+        "name": "Area de asadores",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "COMOYAMEN",
+        "attribute_group_name": "Comodidades y amenities"
+    },
+    {
+        "id": "HAS_OPEN_SPACES",
+        "name": "Áreas verdes",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "COMOYAMEN",
+        "attribute_group_name": "Comodidades y amenities"
+    },
+    {
+        "id": "HAS_FOOTBALL_PITCH",
+        "name": "Cancha de fútbol",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "COMOYAMEN",
+        "attribute_group_name": "Comodidades y amenities"
+    },
+    {
+        "id": "HAS_TENNIS_COURT",
+        "name": "Cancha de tenis",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "COMOYAMEN",
+        "attribute_group_name": "Comodidades y amenities"
+    },
+    {
+        "id": "HAS_CLUBHOUSE",
+        "name": "Casa club",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "COMOYAMEN",
+        "attribute_group_name": "Comodidades y amenities"
+    },
+    {
+        "id": "HAS_GYM",
+        "name": "Gimnasio",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "COMOYAMEN",
+        "attribute_group_name": "Comodidades y amenities"
+    },
+    {
+        "id": "HAS_STRIP_MALL",
+        "name": "Locales comerciales",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "COMOYAMEN",
+        "attribute_group_name": "Comodidades y amenities"
+    },
+    {
+        "id": "HAS_SWIMMING_POOL",
+        "name": "Alberca",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "COMOYAMEN",
+        "attribute_group_name": "Comodidades y amenities"
+    },
+    {
+        "id": "HAS_JOGGING_TRACK",
+        "name": "Pista de jogging",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "COMOYAMEN",
+        "attribute_group_name": "Comodidades y amenities"
+    },
+    {
+        "id": "HAS_PLAYROOM",
+        "name": "Cuarto de juegos",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "ADDITIONAL_CHARACTERISTICS_OF_MODEL",
+        "attribute_group_name": "Características adicionales del modelo"
+    },
+    {
+        "id": "HAS_SECURITY",
+        "name": "Seguridad",
+        "tags": {},
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "COMOYAMEN",
+        "attribute_group_name": "Comodidades y amenities"
+    },
+    {
+        "id": "MAX_ROOMS",
+        "name": "Cantidad máxima de ambientes",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number",
+        "value_max_length": 18,
+        "attribute_group_id": "DFLT",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "BANKING_INSTITUTIONS",
+        "name": "Instituciones financieras",
+        "tags": {
+            "hidden": true,
+            "multivalued": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "string",
+        "value_max_length": 255,
+        "values": [
+            {
+                "id": "405080",
+                "name": "Banamex"
+            },
+            {
+                "id": "405081",
+                "name": "Banorte"
+            },
+            {
+                "id": "405082",
+                "name": "BBVA"
+            },
+            {
+                "id": "405083",
+                "name": "HSBC"
+            },
+            {
+                "id": "405084",
+                "name": "Scotiabank"
+            },
+            {
+                "id": "405085",
+                "name": "Santander"
+            },
+            {
+                "id": "446886",
+                "name": "Aliados"
+            }
+        ],
+        "attribute_group_id": "PAYMENT_METHODS",
+        "attribute_group_name": "Formas de pago"
+    },
+    {
+        "id": "MAX_BATHROOMS",
+        "name": "Cantidad máxima de baños",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number",
+        "value_max_length": 18,
+        "attribute_group_id": "FIND",
+        "attribute_group_name": "Ficha técnica"
+    },
+    {
+        "id": "CREDITS",
+        "name": "Créditos",
+        "tags": {
+            "hidden": true,
+            "multivalued": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "string",
+        "value_max_length": 255,
+        "values": [
+            {
+                "id": "405086",
+                "name": "Infonavit"
+            },
+            {
+                "id": "405087",
+                "name": "Fovissste"
+            },
+            {
+                "id": "446884",
+                "name": "Banjío"
+            },
+            {
+                "id": "446885",
+                "name": "Afirme"
+            }
+        ],
+        "attribute_group_id": "PAYMENT_METHODS",
+        "attribute_group_name": "Formas de pago"
+    },
+    {
+        "id": "MAX_BEDROOMS",
+        "name": "Cantidad máxima de recámaras",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number",
+        "value_max_length": 18,
+        "attribute_group_id": "FIND",
+        "attribute_group_name": "Ficha técnica"
+    },
+    {
+        "id": "MAX_COVERED_AREA",
+        "name": "Cantidad máxima de metros cubiertos",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number_unit",
+        "value_max_length": 255,
+        "allowed_units": [
+            {
+                "id": "m²",
+                "name": "m²"
+            }
+        ],
+        "default_unit": "m²",
+        "attribute_group_id": "FIND",
+        "attribute_group_name": "Ficha técnica"
+    },
+    {
+        "id": "MAX_TOTAL_AREA",
+        "name": "Cantidad máxima de metros totales",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number_unit",
+        "value_max_length": 255,
+        "allowed_units": [
+            {
+                "id": "m²",
+                "name": "m²"
+            }
+        ],
+        "default_unit": "m²",
+        "attribute_group_id": "FIND",
+        "attribute_group_name": "Ficha técnica"
+    },
+    {
+        "id": "MIN_TOTAL_AREA",
+        "name": "Cantidad mínima de metros totales",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number_unit",
+        "value_max_length": 255,
+        "allowed_units": [
+            {
+                "id": "m²",
+                "name": "m²"
+            }
+        ],
+        "default_unit": "m²",
+        "attribute_group_id": "FIND",
+        "attribute_group_name": "Ficha técnica"
+    },
+    {
+        "id": "CMG_SITE",
+        "name": "Sitio de origen",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "string",
+        "value_max_length": 255,
+        "attribute_group_id": "FIND",
+        "attribute_group_name": "Ficha técnica"
+    },
+    {
+        "id": "CANONICAL_URL",
+        "name": "Url canónica",
+        "tags": {
+            "hidden": true,
+            "read_only": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "string",
+        "value_max_length": 255,
+        "attribute_group_id": "DFLT",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "SELECTED_PACKAGE",
+        "name": "Paquete seleccionado",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "string",
+        "value_max_length": 255,
+        "attribute_group_id": "FIND",
+        "attribute_group_name": "Ficha técnica"
+    },
+    {
+        "id": "RESERVATION_FEE",
+        "name": "Apartado",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number_unit",
+        "value_max_length": 255,
+        "allowed_units": [
+            {
+                "id": "MXN",
+                "name": "MXN"
+            },
+            {
+                "id": "USD",
+                "name": "USD"
+            }
+        ],
+        "default_unit": "USD",
+        "attribute_group_id": "PAYMENT_METHODS",
+        "attribute_group_name": "Formas de pago"
+    },
+    {
+        "id": "DOWN_PAYMENT",
+        "name": "Enganche",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number_unit",
+        "value_max_length": 255,
+        "allowed_units": [
+            {
+                "id": "%",
+                "name": "%"
+            }
+        ],
+        "default_unit": "%",
+        "attribute_group_id": "PAYMENT_METHODS",
+        "attribute_group_name": "Formas de pago"
+    },
+    {
+        "id": "SUITABLE_FOR_MORTGAGE_LOAN",
+        "name": "Apto crédito",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "DFLT",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "ACCUMULATES_LATAM_PASS_MILES",
+        "name": "Acumula Millas LATAM Pass",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "WITH_VIRTUAL_TOUR",
+        "name": "Con tour virtual",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "CONSTRUCTS",
+        "name": "Construye",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "string",
+        "value_max_length": 255,
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "MINVU_SUBSIDY",
+        "name": "Subsidio MINVU",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "string",
+        "value_max_length": 255,
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "REMARKS",
+        "name": "Notas",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "string",
+        "value_max_length": 255,
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "SOCIAL_STRATUM",
+        "name": "Estrato social",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number",
+        "value_max_length": 18,
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "PROMOTED_HOUSING",
+        "name": "Vivienda promovida",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "DISCOUNT_PRICE",
+        "name": "Precio descuento",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "string",
+        "value_max_length": 255,
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "FURNISHED_BONUS",
+        "name": "Bono para muebles",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number_unit",
+        "value_max_length": 255,
+        "allowed_units": [
+            {
+                "id": "MXN",
+                "name": "MXN"
+            },
+            {
+                "id": "USD",
+                "name": "USD"
+            },
+            {
+                "id": "UVA",
+                "name": "UVA"
+            }
+        ],
+        "default_unit": "USD",
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "GUARANTEED_RENTAL_TERM",
+        "name": "Plazo de alquiler garantizado",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number_unit",
+        "value_max_length": 255,
+        "allowed_units": [
+            {
+                "id": "meses",
+                "name": "meses"
+            },
+            {
+                "id": "años",
+                "name": "años"
+            }
+        ],
+        "default_unit": "años",
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "GUARANTEED_RENTAL_ABOVE_MARKET_TERM",
+        "name": "Plazo de alquiler garantizado a un precio superior al del mercado",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number_unit",
+        "value_max_length": 255,
+        "allowed_units": [
+            {
+                "id": "meses",
+                "name": "meses"
+            },
+            {
+                "id": "años",
+                "name": "años"
+            }
+        ],
+        "default_unit": "años",
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "DOWN_PAYMENT_INSTALLMENTS_NO_INTEREST",
+        "name": "Cuotas sin interés para la seña",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number",
+        "value_max_length": 18,
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "DIVIDEND_AMOUNT_TO_REPAY",
+        "name": "Cantidad de dividendos a devolver",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number",
+        "value_max_length": 18,
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "DOWN_PAYMENT_INSTALLMENT_QUANTITY",
+        "name": "Cantidad de cuotas de pago del anticipo",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number",
+        "value_max_length": 18,
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "INCLUDES_DOWN_PAYMENT_IN_RENT",
+        "name": "Con seña incluida en el alquiler",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "IS_SHORT_TERM_RENTAL_FRIENDLY",
+        "name": "Ideal para alquiler temporal",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "WITH_FREE_PARKING",
+        "name": "Con cochera gratis",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "WITH_FREE_STORAGE_UNIT",
+        "name": "Con baulera gratis",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "WITH_ZERO_DOWN_PAYMENT_INVESTMENT",
+        "name": "Con inversión sin anticipo",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "WITH_MORTGAGE_RATE_FREEZE",
+        "name": "Con congelamiento de tasa de crédito hipotecario",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "DOWN_PAYMENT_PERCENTAGE_CONTRIBUTION",
+        "name": "Porcentaje de aporte del anticipo",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number_unit",
+        "value_max_length": 255,
+        "allowed_units": [
+            {
+                "id": "%",
+                "name": "%"
+            }
+        ],
+        "default_unit": "%",
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "MINIMUM_INSTALLMENT_AMOUNT",
+        "name": "Monto mínimo de cuotas",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number_unit",
+        "value_max_length": 255,
+        "allowed_units": [
+            {
+                "id": "MXN",
+                "name": "MXN"
+            },
+            {
+                "id": "USD",
+                "name": "USD"
+            },
+            {
+                "id": "UVA",
+                "name": "UVA"
+            }
+        ],
+        "default_unit": "USD",
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "DOWN_PAYMENT_IN_X_INSTALLMENTS",
+        "name": "Pago de seña en X cuotas",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number",
+        "value_max_length": 18,
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "PHONE_ID",
+        "name": "Identificador de teléfono",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "string",
+        "value_max_length": 255,
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "IS_PROPERTY_IN_AUCTION",
+        "name": "Es propiedad en remate",
+        "tags": {
+            "fixed": true,
+            "required": true,
+            "catalog_listing_required": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No"
+            }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "HAS_GOOD_QUALITY",
+        "name": "Tiene buena calidad",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "boolean",
+        "values": [
+            {
+                "id": "242084",
+                "name": "No",
+                "metadata": {
+                    "value": false
+                }
+            },
+            {
+                "id": "242085",
+                "name": "Sí",
+                "metadata": {
+                    "value": true
+                }
+            }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "SUGGESTED_PARENT_ID",
+        "name": "ID de padre sugerido",
+        "tags": {
+            "hidden": true,
+            "read_only": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "string",
+        "value_max_length": 255,
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "PREVIOUS_PRICE",
+        "name": "Precio anterior",
+        "tags": {
+            "hidden": true,
+            "read_only": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "number_unit",
+        "value_max_length": 255,
+        "allowed_units": [
+            {
+                "id": "MXN",
+                "name": "MXN"
+            },
+            {
+                "id": "UVA",
+                "name": "UVA"
+            },
+            {
+                "id": "USD",
+                "name": "USD"
+            }
+        ],
+        "default_unit": "MXN",
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "ORIGINAL_PUBLICATION_DATE",
+        "name": "Fecha de publicación original",
+        "tags": {
+            "hidden": true,
+            "read_only": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 1,
+        "value_type": "string",
+        "value_max_length": 255,
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    },
+    {
+        "id": "ITEM_CONDITION",
+        "name": "Condición del ítem",
+        "tags": {
+            "hidden": true
+        },
+        "hierarchy": "ITEM",
+        "relevance": 2,
+        "value_type": "list",
+        "values": [
+            {
+                "id": "2230284",
+                "name": "Nuevo"
+            }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+    }
+]

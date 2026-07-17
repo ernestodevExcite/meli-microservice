@@ -1,0 +1,1073 @@
+[
+    {
+        "code": 200,
+        "body": {
+            "id": "MLM3833076594",
+            "site_id": "MLM",
+            "title": "Departamento En Venta, Puebla, Nasara",
+            "family_name": null,
+            "seller_id": 2518293207,
+            "category_id": "MLM170376",
+            "user_product_id": null,
+            "official_store_id": null,
+            "price": 1208000.0,
+            "base_price": 1208000.0,
+            "original_price": null,
+            "inventory_id": null,
+            "currency_id": "MXN",
+            "initial_quantity": 4,
+            "available_quantity": 4,
+            "sold_quantity": 0,
+            "sale_terms": [
+                {
+                    "id": "IS_FINANCEABLE",
+                    "name": "Es financiable",
+                    "value_id": "242085",
+                    "value_name": "Sí",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "242085",
+                            "name": "Sí",
+                            "struct": null
+                        }
+                    ],
+                    "value_type": "boolean"
+                },
+                {
+                    "id": "FINANCEABLE_BY",
+                    "name": "Financiado por",
+                    "value_id": "10643847",
+                    "value_name": "Credimejora",
+                    "value_struct": null,
+                    "values": [
+                        {
+                            "id": "10643847",
+                            "name": "Credimejora",
+                            "struct": null
+                        }
+                    ],
+                    "value_type": "string"
+                }
+            ],
+            "buying_mode": "classified",
+            "listing_type_id": "gold_premium",
+            "start_time": "2025-07-14T21:43:40.391Z",
+            "stop_time": "2075-07-02T04:00:00.000Z",
+            "end_time": "2075-07-02T04:00:00.000Z",
+            "expiration_time": "2026-09-06T15:26:37.571Z",
+            "condition": "new",
+            "permalink": "https://departamento.mercadolibre.com.mx/MLM-3833076594-departamento-en-venta-puebla-nasara-_JM",
+            "thumbnail_id": "757511-MLM87912976447_072025",
+            "thumbnail": "http://http2.mlstatic.com/D_757511-MLM87912976447_072025-I.jpg",
+            "pictures": [
+                {
+                    "id": "757511-MLM87912976447_072025",
+                    "url": "http://http2.mlstatic.com/D_757511-MLM87912976447_072025-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_757511-MLM87912976447_072025-O.jpg",
+                    "size": "500x281",
+                    "max_size": "1200x675",
+                    "quality": ""
+                },
+                {
+                    "id": "604228-MLM87912976449_072025",
+                    "url": "http://http2.mlstatic.com/D_604228-MLM87912976449_072025-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_604228-MLM87912976449_072025-O.jpg",
+                    "size": "500x281",
+                    "max_size": "1200x675",
+                    "quality": ""
+                },
+                {
+                    "id": "810238-MLM87912976457_072025",
+                    "url": "http://http2.mlstatic.com/D_810238-MLM87912976457_072025-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_810238-MLM87912976457_072025-O.jpg",
+                    "size": "500x281",
+                    "max_size": "1200x675",
+                    "quality": ""
+                },
+                {
+                    "id": "604413-MLM87912976455_072025",
+                    "url": "http://http2.mlstatic.com/D_604413-MLM87912976455_072025-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_604413-MLM87912976455_072025-O.jpg",
+                    "size": "500x500",
+                    "max_size": "800x800",
+                    "quality": ""
+                },
+                {
+                    "id": "956310-MLM87912976451_072025",
+                    "url": "http://http2.mlstatic.com/D_956310-MLM87912976451_072025-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_956310-MLM87912976451_072025-O.jpg",
+                    "size": "500x374",
+                    "max_size": "1067x800",
+                    "quality": ""
+                },
+                {
+                    "id": "721465-MLM87912976453_072025",
+                    "url": "http://http2.mlstatic.com/D_721465-MLM87912976453_072025-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_721465-MLM87912976453_072025-O.jpg",
+                    "size": "500x374",
+                    "max_size": "1067x800",
+                    "quality": ""
+                },
+                {
+                    "id": "780787-MLM87912944803_072025",
+                    "url": "http://http2.mlstatic.com/D_780787-MLM87912944803_072025-O.webp",
+                    "secure_url": "https://http2.mlstatic.com/D_780787-MLM87912944803_072025-O.webp",
+                    "size": "500x281",
+                    "max_size": "1200x675",
+                    "quality": ""
+                },
+                {
+                    "id": "932169-MLM87581196942_072025",
+                    "url": "http://http2.mlstatic.com/D_932169-MLM87581196942_072025-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_932169-MLM87581196942_072025-O.jpg",
+                    "size": "500x374",
+                    "max_size": "1067x800",
+                    "quality": ""
+                },
+                {
+                    "id": "619440-MLM87912935231_072025",
+                    "url": "http://http2.mlstatic.com/D_619440-MLM87912935231_072025-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_619440-MLM87912935231_072025-O.jpg",
+                    "size": "500x374",
+                    "max_size": "1067x800",
+                    "quality": ""
+                },
+                {
+                    "id": "973125-MLM87580971392_072025",
+                    "url": "http://http2.mlstatic.com/D_973125-MLM87580971392_072025-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_973125-MLM87580971392_072025-O.jpg",
+                    "size": "500x500",
+                    "max_size": "800x800",
+                    "quality": ""
+                },
+                {
+                    "id": "694997-MLM87581158286_072025",
+                    "url": "http://http2.mlstatic.com/D_694997-MLM87581158286_072025-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_694997-MLM87581158286_072025-O.jpg",
+                    "size": "500x500",
+                    "max_size": "800x800",
+                    "quality": ""
+                },
+                {
+                    "id": "935837-MLM87581168360_072025",
+                    "url": "http://http2.mlstatic.com/D_935837-MLM87581168360_072025-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_935837-MLM87581168360_072025-O.jpg",
+                    "size": "500x500",
+                    "max_size": "800x800",
+                    "quality": ""
+                },
+                {
+                    "id": "696581-MLM112463369301_052026",
+                    "url": "http://http2.mlstatic.com/D_696581-MLM112463369301_052026-O.webp",
+                    "secure_url": "https://http2.mlstatic.com/D_696581-MLM112463369301_052026-O.webp",
+                    "size": "500x281",
+                    "max_size": "1000x562",
+                    "quality": ""
+                },
+                {
+                    "id": "947522-MLM112462989929_052026",
+                    "url": "http://http2.mlstatic.com/D_947522-MLM112462989929_052026-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_947522-MLM112462989929_052026-O.jpg",
+                    "size": "500x375",
+                    "max_size": "1000x750",
+                    "quality": ""
+                },
+                {
+                    "id": "919946-MLM112462548219_052026",
+                    "url": "http://http2.mlstatic.com/D_919946-MLM112462548219_052026-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_919946-MLM112462548219_052026-O.jpg",
+                    "size": "500x375",
+                    "max_size": "1000x750",
+                    "quality": ""
+                },
+                {
+                    "id": "631637-MLM112462548257_052026",
+                    "url": "http://http2.mlstatic.com/D_631637-MLM112462548257_052026-O.jpg",
+                    "secure_url": "https://http2.mlstatic.com/D_631637-MLM112462548257_052026-O.jpg",
+                    "size": "500x500",
+                    "max_size": "500x500",
+                    "quality": ""
+                }
+            ],
+            "video_id": null,
+            "descriptions": [],
+            "accepts_mercadopago": false,
+            "non_mercado_pago_payment_methods": [],
+            "shipping": {
+                "mode": "not_specified",
+                "methods": [],
+                "tags": [],
+                "dimensions": null,
+                "local_pick_up": false,
+                "free_shipping": false,
+                "logistic_type": null,
+                "store_pick_up": false
+            },
+            "international_delivery_mode": "none",
+            "seller_address": {
+                "address_line": "Calle Prado Norte 125",
+                "zip_code": "11000",
+                "city": {
+                    "id": "TUxNQ01JRzU0Mjg",
+                    "name": "Miguel Hidalgo"
+                },
+                "state": {
+                    "id": "MX-DIF",
+                    "name": "Distrito Federal"
+                },
+                "country": {
+                    "id": "MX",
+                    "name": "Mexico"
+                },
+                "search_location": {
+                    "neighborhood": {
+                        "id": "TUxNQkxPTTI3MDk",
+                        "name": "Lomas De Chapultepec"
+                    },
+                    "city": {
+                        "id": "TUxNQ01JRzU0Mjg",
+                        "name": "Miguel Hidalgo"
+                    },
+                    "state": {
+                        "id": "TUxNUERJUzYwOTQ",
+                        "name": "Distrito Federal"
+                    }
+                },
+                "latitude": 19.42748078788516,
+                "longitude": -99.20610711848676,
+                "id": 1488371379
+            },
+            "seller_contact": {
+                "contact": "",
+                "other_info": "",
+                "country_code": "52",
+                "area_code": "52",
+                "phone": "5651202910",
+                "country_code2": "",
+                "area_code2": "52",
+                "phone2": "5651202910",
+                "email": "plataformas_sadasi@datavoice.com.mx",
+                "webpage": ""
+            },
+            "location": {
+                "address_line": "Apulco, Bosques Amalucan, 72310 Heroica Puebla de Zaragoza",
+                "zip_code": "",
+                "neighborhood": {
+                    "id": "",
+                    "name": ""
+                },
+                "city": {
+                    "id": "TUxNQ1BVRTEwOTA",
+                    "name": "Puebla"
+                },
+                "state": {
+                    "id": "TUxNUFBVRTQ4ODM",
+                    "name": "Puebla"
+                },
+                "country": {
+                    "id": "MX",
+                    "name": "Mexico"
+                },
+                "latitude": 19.0505814,
+                "longitude": -98.1300856
+            },
+            "geolocation": {
+                "latitude": 19.0505814,
+                "longitude": -98.1300856
+            },
+            "coverage_areas": [],
+            "attributes": [
+                {
+                    "id": "HAS_GARDEN",
+                    "name": "Jardín",
+                    "value_id": "242085",
+                    "value_name": "Sí",
+                    "values": [
+                        {
+                            "id": "242085",
+                            "name": "Sí",
+                            "struct": null
+                        }
+                    ],
+                    "value_type": "boolean"
+                },
+                {
+                    "id": "HAS_KITCHEN",
+                    "name": "Cocina",
+                    "value_id": "242085",
+                    "value_name": "Sí",
+                    "values": [
+                        {
+                            "id": "242085",
+                            "name": "Sí",
+                            "struct": null
+                        }
+                    ],
+                    "value_type": "boolean"
+                },
+                {
+                    "id": "HAS_GYM",
+                    "name": "Gimnasio",
+                    "value_id": "242085",
+                    "value_name": "Sí",
+                    "values": [
+                        {
+                            "id": "242085",
+                            "name": "Sí",
+                            "struct": null
+                        }
+                    ],
+                    "value_type": "boolean"
+                },
+                {
+                    "id": "HAS_MULTIPURPOSE_ROOM",
+                    "name": "Salón de usos múltiples",
+                    "value_id": "242085",
+                    "value_name": "Sí",
+                    "values": [
+                        {
+                            "id": "242085",
+                            "name": "Sí",
+                            "struct": null
+                        }
+                    ],
+                    "value_type": "boolean"
+                },
+                {
+                    "id": "HAS_PLAYGROUND",
+                    "name": "Área de juegos infantiles",
+                    "value_id": "242085",
+                    "value_name": "Sí",
+                    "values": [
+                        {
+                            "id": "242085",
+                            "name": "Sí",
+                            "struct": null
+                        }
+                    ],
+                    "value_type": "boolean"
+                },
+                {
+                    "id": "HAS_SECURITY",
+                    "name": "Seguridad",
+                    "value_id": "242085",
+                    "value_name": "Sí",
+                    "values": [
+                        {
+                            "id": "242085",
+                            "name": "Sí",
+                            "struct": null
+                        }
+                    ],
+                    "value_type": "boolean"
+                },
+                {
+                    "id": "BALCONY_AREA",
+                    "name": "Superficie de balcón",
+                    "value_id": null,
+                    "value_name": "0 m²",
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "0 m²",
+                            "struct": {
+                                "number": 0,
+                                "unit": "m²"
+                            }
+                        }
+                    ],
+                    "value_type": "number_unit"
+                },
+                {
+                    "id": "LOGO_ID",
+                    "name": "Logo",
+                    "value_id": null,
+                    "value_name": "789632-MLM87912857783_072025",
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "789632-MLM87912857783_072025",
+                            "struct": null
+                        }
+                    ],
+                    "value_type": "string"
+                },
+                {
+                    "id": "MAX_BATHROOMS",
+                    "name": "Cantidad máxima de baños",
+                    "value_id": null,
+                    "value_name": "1",
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "1",
+                            "struct": null
+                        }
+                    ],
+                    "value_type": "number"
+                },
+                {
+                    "id": "MAX_BEDROOMS",
+                    "name": "Cantidad máxima de recámaras",
+                    "value_id": null,
+                    "value_name": "2",
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "2",
+                            "struct": null
+                        }
+                    ],
+                    "value_type": "number"
+                },
+                {
+                    "id": "MAX_COVERED_AREA",
+                    "name": "Cantidad máxima de metros cubiertos",
+                    "value_id": null,
+                    "value_name": "57 m²",
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "57 m²",
+                            "struct": {
+                                "number": 57,
+                                "unit": "m²"
+                            }
+                        }
+                    ],
+                    "value_type": "number_unit"
+                },
+                {
+                    "id": "MAX_TOTAL_AREA",
+                    "name": "Cantidad máxima de metros totales",
+                    "value_id": null,
+                    "value_name": "56.06 m²",
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "56.06 m²",
+                            "struct": {
+                                "number": 56.06,
+                                "unit": "m²"
+                            }
+                        }
+                    ],
+                    "value_type": "number_unit"
+                },
+                {
+                    "id": "MIN_BATHROOMS",
+                    "name": "Cantidad mínima de baños",
+                    "value_id": null,
+                    "value_name": "1",
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "1",
+                            "struct": null
+                        }
+                    ],
+                    "value_type": "number"
+                },
+                {
+                    "id": "MIN_BEDROOMS",
+                    "name": "Cantidad mínima de recámaras",
+                    "value_id": null,
+                    "value_name": "2",
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "2",
+                            "struct": null
+                        }
+                    ],
+                    "value_type": "number"
+                },
+                {
+                    "id": "MIN_COVERED_AREA",
+                    "name": "Cantidad mínima de metros cubiertos",
+                    "value_id": null,
+                    "value_name": "57 m²",
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "57 m²",
+                            "struct": {
+                                "number": 57,
+                                "unit": "m²"
+                            }
+                        }
+                    ],
+                    "value_type": "number_unit"
+                },
+                {
+                    "id": "OPERATION",
+                    "name": "Operación",
+                    "value_id": "242075",
+                    "value_name": "Venta",
+                    "values": [
+                        {
+                            "id": "242075",
+                            "name": "Venta",
+                            "struct": null
+                        }
+                    ],
+                    "value_type": "list"
+                },
+                {
+                    "id": "OPERATION_SUBTYPE",
+                    "name": "Subtipo de operación",
+                    "value_id": "245034",
+                    "value_name": "Desarrollo",
+                    "values": [
+                        {
+                            "id": "245034",
+                            "name": "Desarrollo",
+                            "struct": null
+                        }
+                    ],
+                    "value_type": "list"
+                },
+                {
+                    "id": "PROPERTY_TYPE",
+                    "name": "Inmueble",
+                    "value_id": "242062",
+                    "value_name": "Departamento",
+                    "values": [
+                        {
+                            "id": "242062",
+                            "name": "Departamento",
+                            "struct": null
+                        }
+                    ],
+                    "value_type": "list"
+                },
+                {
+                    "id": "DEVELOPMENT_NAME",
+                    "name": "Nombre del desarrollo",
+                    "value_id": null,
+                    "value_name": "Nasara (Puebla)",
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "Nasara (Puebla)",
+                            "struct": null
+                        }
+                    ],
+                    "value_type": "string"
+                },
+                {
+                    "id": "POSSESSION_DATE",
+                    "name": "Fecha de entrega",
+                    "value_id": null,
+                    "value_name": "0",
+                    "values": [
+                        {
+                            "id": null,
+                            "name": "0",
+                            "struct": null
+                        }
+                    ],
+                    "value_type": "string"
+                },
+                {
+                    "id": "POSSESSION_STATUS",
+                    "name": "Estado del proyecto",
+                    "value_id": "242413",
+                    "value_name": "Entrega inmediata",
+                    "values": [
+                        {
+                            "id": "242413",
+                            "name": "Entrega inmediata",
+                            "struct": null
+                        }
+                    ],
+                    "value_type": "list"
+                },
+                {
+                    "id": "IS_PROPERTY_IN_AUCTION",
+                    "name": "Es propiedad en remate",
+                    "value_id": "242084",
+                    "value_name": "No",
+                    "values": [
+                        {
+                            "id": "242084",
+                            "name": "No",
+                            "struct": null
+                        }
+                    ],
+                    "value_type": "boolean"
+                },
+                {
+                    "id": "ITEM_CONDITION",
+                    "name": "Condición del ítem",
+                    "value_id": "2230284",
+                    "value_name": "Nuevo",
+                    "values": [
+                        {
+                            "id": "2230284",
+                            "name": "Nuevo",
+                            "struct": null
+                        }
+                    ],
+                    "value_type": "list"
+                },
+                {
+                    "id": "WITH_VIRTUAL_TOUR",
+                    "name": "Con tour virtual",
+                    "value_id": "242084",
+                    "value_name": "No",
+                    "values": [
+                        {
+                            "id": "242084",
+                            "name": "No",
+                            "struct": null
+                        }
+                    ],
+                    "value_type": "boolean"
+                }
+            ],
+            "warnings": [],
+            "listing_source": "",
+            "variations": [
+                {
+                    "id": 202939038607,
+                    "price": 1398000.0,
+                    "attribute_combinations": [
+                        {
+                            "id": "FULL_BATHROOMS",
+                            "name": "Baños",
+                            "value_id": null,
+                            "value_name": "1",
+                            "values": [
+                                {
+                                    "id": null,
+                                    "name": "1",
+                                    "struct": null
+                                }
+                            ],
+                            "value_type": "number"
+                        },
+                        {
+                            "id": "PARKING_LOTS",
+                            "name": "Estacionamientos",
+                            "value_id": null,
+                            "value_name": "1",
+                            "values": [
+                                {
+                                    "id": null,
+                                    "name": "1",
+                                    "struct": null
+                                }
+                            ],
+                            "value_type": "number"
+                        },
+                        {
+                            "id": "UNIT_NAME",
+                            "name": "Nombre de la unidad",
+                            "value_id": null,
+                            "value_name": "1.0",
+                            "values": [
+                                {
+                                    "id": null,
+                                    "name": "1.0",
+                                    "struct": null
+                                }
+                            ],
+                            "value_type": "string"
+                        },
+                        {
+                            "id": "MODEL_NAME",
+                            "name": "Nombre del modelo",
+                            "value_id": null,
+                            "value_name": "Modelo Hausa PB",
+                            "values": [
+                                {
+                                    "id": null,
+                                    "name": "Modelo Hausa PB",
+                                    "struct": null
+                                }
+                            ],
+                            "value_type": "string"
+                        },
+                        {
+                            "id": "BEDROOMS",
+                            "name": "Recámaras",
+                            "value_id": null,
+                            "value_name": "2",
+                            "values": [
+                                {
+                                    "id": null,
+                                    "name": "2",
+                                    "struct": null
+                                }
+                            ],
+                            "value_type": "number"
+                        },
+                        {
+                            "id": "COVERED_AREA",
+                            "name": "Superficie construida",
+                            "value_id": null,
+                            "value_name": "57 m²",
+                            "values": [
+                                {
+                                    "id": null,
+                                    "name": "57 m²",
+                                    "struct": {
+                                        "number": 57,
+                                        "unit": "m²"
+                                    }
+                                }
+                            ],
+                            "value_type": "number_unit"
+                        }
+                    ],
+                    "available_quantity": 1,
+                    "sold_quantity": 0,
+                    "sale_terms": [],
+                    "picture_ids": [
+                        "696581-MLM112463369301_052026"
+                    ],
+                    "seller_custom_field": null,
+                    "catalog_product_id": null,
+                    "inventory_id": null,
+                    "item_relations": [],
+                    "user_product_id": null
+                },
+                {
+                    "id": 202939038609,
+                    "price": 1298000.0,
+                    "attribute_combinations": [
+                        {
+                            "id": "FULL_BATHROOMS",
+                            "name": "Baños",
+                            "value_id": null,
+                            "value_name": "1",
+                            "values": [
+                                {
+                                    "id": null,
+                                    "name": "1",
+                                    "struct": null
+                                }
+                            ],
+                            "value_type": "number"
+                        },
+                        {
+                            "id": "PARKING_LOTS",
+                            "name": "Estacionamientos",
+                            "value_id": null,
+                            "value_name": "1",
+                            "values": [
+                                {
+                                    "id": null,
+                                    "name": "1",
+                                    "struct": null
+                                }
+                            ],
+                            "value_type": "number"
+                        },
+                        {
+                            "id": "UNIT_NAME",
+                            "name": "Nombre de la unidad",
+                            "value_id": null,
+                            "value_name": "2.0",
+                            "values": [
+                                {
+                                    "id": null,
+                                    "name": "2.0",
+                                    "struct": null
+                                }
+                            ],
+                            "value_type": "string"
+                        },
+                        {
+                            "id": "MODEL_NAME",
+                            "name": "Nombre del modelo",
+                            "value_id": null,
+                            "value_name": "Modelo Hausa N1",
+                            "values": [
+                                {
+                                    "id": null,
+                                    "name": "Modelo Hausa N1",
+                                    "struct": null
+                                }
+                            ],
+                            "value_type": "string"
+                        },
+                        {
+                            "id": "BEDROOMS",
+                            "name": "Recámaras",
+                            "value_id": null,
+                            "value_name": "2",
+                            "values": [
+                                {
+                                    "id": null,
+                                    "name": "2",
+                                    "struct": null
+                                }
+                            ],
+                            "value_type": "number"
+                        },
+                        {
+                            "id": "COVERED_AREA",
+                            "name": "Superficie construida",
+                            "value_id": null,
+                            "value_name": "57 m²",
+                            "values": [
+                                {
+                                    "id": null,
+                                    "name": "57 m²",
+                                    "struct": {
+                                        "number": 57,
+                                        "unit": "m²"
+                                    }
+                                }
+                            ],
+                            "value_type": "number_unit"
+                        }
+                    ],
+                    "available_quantity": 1,
+                    "sold_quantity": 0,
+                    "sale_terms": [],
+                    "picture_ids": [
+                        "947522-MLM112462989929_052026"
+                    ],
+                    "seller_custom_field": null,
+                    "catalog_product_id": null,
+                    "inventory_id": null,
+                    "item_relations": [],
+                    "user_product_id": null
+                },
+                {
+                    "id": 202939038611,
+                    "price": 1228000.0,
+                    "attribute_combinations": [
+                        {
+                            "id": "FULL_BATHROOMS",
+                            "name": "Baños",
+                            "value_id": null,
+                            "value_name": "1",
+                            "values": [
+                                {
+                                    "id": null,
+                                    "name": "1",
+                                    "struct": null
+                                }
+                            ],
+                            "value_type": "number"
+                        },
+                        {
+                            "id": "PARKING_LOTS",
+                            "name": "Estacionamientos",
+                            "value_id": null,
+                            "value_name": "1",
+                            "values": [
+                                {
+                                    "id": null,
+                                    "name": "1",
+                                    "struct": null
+                                }
+                            ],
+                            "value_type": "number"
+                        },
+                        {
+                            "id": "UNIT_NAME",
+                            "name": "Nombre de la unidad",
+                            "value_id": null,
+                            "value_name": "3.0",
+                            "values": [
+                                {
+                                    "id": null,
+                                    "name": "3.0",
+                                    "struct": null
+                                }
+                            ],
+                            "value_type": "string"
+                        },
+                        {
+                            "id": "MODEL_NAME",
+                            "name": "Nombre del modelo",
+                            "value_id": null,
+                            "value_name": "Modelo Hausa N2",
+                            "values": [
+                                {
+                                    "id": null,
+                                    "name": "Modelo Hausa N2",
+                                    "struct": null
+                                }
+                            ],
+                            "value_type": "string"
+                        },
+                        {
+                            "id": "BEDROOMS",
+                            "name": "Recámaras",
+                            "value_id": null,
+                            "value_name": "2",
+                            "values": [
+                                {
+                                    "id": null,
+                                    "name": "2",
+                                    "struct": null
+                                }
+                            ],
+                            "value_type": "number"
+                        },
+                        {
+                            "id": "COVERED_AREA",
+                            "name": "Superficie construida",
+                            "value_id": null,
+                            "value_name": "57 m²",
+                            "values": [
+                                {
+                                    "id": null,
+                                    "name": "57 m²",
+                                    "struct": {
+                                        "number": 57,
+                                        "unit": "m²"
+                                    }
+                                }
+                            ],
+                            "value_type": "number_unit"
+                        }
+                    ],
+                    "available_quantity": 1,
+                    "sold_quantity": 0,
+                    "sale_terms": [],
+                    "picture_ids": [
+                        "919946-MLM112462548219_052026"
+                    ],
+                    "seller_custom_field": null,
+                    "catalog_product_id": null,
+                    "inventory_id": null,
+                    "item_relations": [],
+                    "user_product_id": null
+                },
+                {
+                    "id": 202939038613,
+                    "price": 1208000.0,
+                    "attribute_combinations": [
+                        {
+                            "id": "FULL_BATHROOMS",
+                            "name": "Baños",
+                            "value_id": null,
+                            "value_name": "1",
+                            "values": [
+                                {
+                                    "id": null,
+                                    "name": "1",
+                                    "struct": null
+                                }
+                            ],
+                            "value_type": "number"
+                        },
+                        {
+                            "id": "PARKING_LOTS",
+                            "name": "Estacionamientos",
+                            "value_id": null,
+                            "value_name": "1",
+                            "values": [
+                                {
+                                    "id": null,
+                                    "name": "1",
+                                    "struct": null
+                                }
+                            ],
+                            "value_type": "number"
+                        },
+                        {
+                            "id": "UNIT_NAME",
+                            "name": "Nombre de la unidad",
+                            "value_id": null,
+                            "value_name": "4.0",
+                            "values": [
+                                {
+                                    "id": null,
+                                    "name": "4.0",
+                                    "struct": null
+                                }
+                            ],
+                            "value_type": "string"
+                        },
+                        {
+                            "id": "MODEL_NAME",
+                            "name": "Nombre del modelo",
+                            "value_id": null,
+                            "value_name": "Modelo Hausa N3",
+                            "values": [
+                                {
+                                    "id": null,
+                                    "name": "Modelo Hausa N3",
+                                    "struct": null
+                                }
+                            ],
+                            "value_type": "string"
+                        },
+                        {
+                            "id": "BEDROOMS",
+                            "name": "Recámaras",
+                            "value_id": null,
+                            "value_name": "2",
+                            "values": [
+                                {
+                                    "id": null,
+                                    "name": "2",
+                                    "struct": null
+                                }
+                            ],
+                            "value_type": "number"
+                        },
+                        {
+                            "id": "COVERED_AREA",
+                            "name": "Superficie construida",
+                            "value_id": null,
+                            "value_name": "57 m²",
+                            "values": [
+                                {
+                                    "id": null,
+                                    "name": "57 m²",
+                                    "struct": {
+                                        "number": 57,
+                                        "unit": "m²"
+                                    }
+                                }
+                            ],
+                            "value_type": "number_unit"
+                        }
+                    ],
+                    "available_quantity": 1,
+                    "sold_quantity": 0,
+                    "sale_terms": [],
+                    "picture_ids": [
+                        "631637-MLM112462548257_052026"
+                    ],
+                    "seller_custom_field": null,
+                    "catalog_product_id": null,
+                    "inventory_id": null,
+                    "item_relations": [],
+                    "user_product_id": null
+                }
+            ],
+            "status": "active",
+            "sub_status": [
+                "pack_quota_assigned"
+            ],
+            "tags": [],
+            "warranty": null,
+            "catalog_product_id": null,
+            "domain_id": "MLM-DEVELOPMENT_APARTMENTS_FOR_SALE",
+            "seller_custom_field": null,
+            "parent_item_id": null,
+            "differential_pricing": null,
+            "deal_ids": [],
+            "automatic_relist": false,
+            "date_created": "2025-07-14T21:43:40.747Z",
+            "last_updated": "2026-06-18T15:26:39.443Z",
+            "health": 0.5,
+            "catalog_listing": false,
+            "item_relations": [],
+            "channels": [
+                "marketplace"
+            ]
+        }
+    }
+]

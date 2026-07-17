@@ -10,6 +10,7 @@ from app.core.config import get_settings
 from app.core.logging import get_logger
 from app.listings import service
 from app.listings.schema import CmsWebhookPayload, UpgradeListingRequest
+from app.meli.errors import MeliError, http_status_for
 
 log = get_logger(__name__)
 router = APIRouter(prefix="/listings", tags=["listings"])
@@ -30,15 +31,35 @@ async def verify_webhook(request: Request, x_cms_signature: str | None = Header(
         raise HTTPException(401, "Firma del webhook invalida")
 
 
+def _log_and_reraise(e: MeliError, id_cms: str, op: str) -> None:
+    """Log contextual (id_cms + op) y re-raise; el handler global traduce a HTTP.
+
+    - 4xx de negocio MELI: WARN (ruido esperable, no requiere stacktrace).
+    - 5xx de MELI o transitorios agotados: ERROR (upstream caido).
+    El service ya logueo 'publish_failed'/'update_failed'/... con el body; aqui
+    solo anadimos la capa de 'que endpoint y que id_cms' para trazabilidad.
+    """
+    http_status = http_status_for(e)
+    log_fn = log.error if http_status >= 500 else log.warning
+    log_fn(
+        "meli_error_enpoint",
+        op=op, id_cms=id_cms, meli_status=e.status_code,
+        http_status=http_status, message=e.message, cause=e.cause,
+    )
+    raise e
+
+
 @router.post("", status_code=status.HTTP_201_CREATED, dependencies=[Depends(verify_webhook)])
 async def publish(payload: CmsWebhookPayload) -> dict:
     try:
         return await service.publish(payload)
     except ValueError as e:
         raise HTTPException(400, str(e))
-    except Exception as e:  # noqa: BLE001
-        log.exception("publish_endpoint_error", id_cms=payload.id_cms)
-        raise HTTPException(502, f"Error MELI: {e}")
+    except MeliError as e:
+        _log_and_reraise(e, payload.id_cms, "publish")
+    except Exception as e:  # noqa: BLE001 - bug inesperado, no enmascarar como MELI
+        log.exception("publish_endpoint_unexpected", id_cms=payload.id_cms)
+        raise HTTPException(500, "Error interno del microservicio") from e
 
 
 @router.put("/{id_cms}", dependencies=[Depends(verify_webhook)])
@@ -49,9 +70,11 @@ async def update(id_cms: str, payload: CmsWebhookPayload) -> dict:
         return await service.update(id_cms, payload)
     except ValueError as e:
         raise HTTPException(404, str(e))
+    except MeliError as e:
+        _log_and_reraise(e, id_cms, "update")
     except Exception as e:  # noqa: BLE001
-        log.exception("update_endpoint_error", id_cms=id_cms)
-        raise HTTPException(502, f"Error MELI: {e}")
+        log.exception("update_endpoint_unexpected", id_cms=id_cms)
+        raise HTTPException(500, "Error interno del microservicio") from e
 
 
 @router.get("/{id_cms}")
@@ -60,9 +83,11 @@ async def get_status(id_cms: str) -> dict:
         return await service.get_status(id_cms)
     except ValueError as e:
         raise HTTPException(404, str(e))
+    except MeliError as e:
+        _log_and_reraise(e, id_cms, "get_status")
     except Exception as e:  # noqa: BLE001
-        log.exception("get_status_endpoint_error", id_cms=id_cms)
-        raise HTTPException(502, f"Error MELI: {e}")
+        log.exception("get_status_endpoint_unexpected", id_cms=id_cms)
+        raise HTTPException(500, "Error interno del microservicio") from e
 
 
 @router.post("/{id_cms}/upgrade", dependencies=[Depends(verify_webhook)])
@@ -71,9 +96,11 @@ async def upgrade(id_cms: str, req: UpgradeListingRequest) -> dict:
         return await service.upgrade(id_cms, req)
     except ValueError as e:
         raise HTTPException(404, str(e))
+    except MeliError as e:
+        _log_and_reraise(e, id_cms, "upgrade")
     except Exception as e:  # noqa: BLE001
-        log.exception("upgrade_endpoint_error", id_cms=id_cms)
-        raise HTTPException(502, f"Error MELI: {e}")
+        log.exception("upgrade_endpoint_unexpected", id_cms=id_cms)
+        raise HTTPException(500, "Error interno del microservicio") from e
 
 
 @router.delete("/{id_cms}", dependencies=[Depends(verify_webhook)])
@@ -82,6 +109,8 @@ async def delete(id_cms: str) -> dict:
         return await service.delete(id_cms)
     except ValueError as e:
         raise HTTPException(404, str(e))
+    except MeliError as e:
+        _log_and_reraise(e, id_cms, "delete")
     except Exception as e:  # noqa: BLE001
-        log.exception("delete_endpoint_error", id_cms=id_cms)
-        raise HTTPException(502, f"Error MELI: {e}")
+        log.exception("delete_endpoint_unexpected", id_cms=id_cms)
+        raise HTTPException(500, "Error interno del microservicio") from e

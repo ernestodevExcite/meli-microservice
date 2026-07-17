@@ -23,11 +23,20 @@ class TokenBundle:
     def __init__(self, access_token: str, refresh_token: str, expires_at: datetime) -> None:
         self.access_token = access_token
         self.refresh_token = refresh_token
-        self.expires_at = expires_at
+        self.expires_at = _ensure_aware(expires_at)
 
     @property
     def is_expired(self) -> bool:
         return datetime.now(UTC) >= self.expires_at
+
+
+def _ensure_aware(dt: datetime) -> datetime:
+    """Mongo puede devolver datetimes naive (sin tzinfo) si el doc se persistio asi.
+    Forzamos UTC para poder comparar contra datetime.now(UTC) sin TypeError.
+    """
+    if dt.tzinfo is None:
+        return dt.replace(tzinfo=UTC)
+    return dt
 
 
 async def save_tokens(access_token: str, refresh_token: str, expires_in: int) -> TokenBundle:
@@ -64,20 +73,19 @@ async def set_bootstrap_refresh_token(refresh_token: str) -> None:
     """Persiste el refresh_token inicial tomado de variable de entorno.
 
     Solo se llama si Mongo aun no tiene tokens (primer arranque).
+    Si el doc ya existe (rearranque), no lo pisa.
     """
     db = get_db()
-    await db[COLLECTION].update_one(
-        {"_id": SINGLETON_ID, "refresh_token": {"$exists": False}},
-        {
-            "$setOnInsert": {
-                "access_token": "",
-                "refresh_token": refresh_token,
-                "expires_at": datetime(2000, 1, 1, tzinfo=UTC),
-                "created_at": datetime.now(UTC),
-            }
-        },
-        upsert=True,
-    )
+    existing = await db[COLLECTION].find_one({"_id": SINGLETON_ID})
+    if existing is not None:
+        return
+    await db[COLLECTION].insert_one({
+        "_id": SINGLETON_ID,
+        "access_token": "",
+        "refresh_token": refresh_token,
+        "expires_at": datetime(2000, 1, 1, tzinfo=UTC),
+        "created_at": datetime.now(UTC),
+    })
 
 
 async def atomic_rotate(

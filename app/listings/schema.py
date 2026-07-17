@@ -32,12 +32,34 @@ class Picture(BaseModel):
 
 
 class SellerContact(BaseModel):
-    contact: str
+    # MELI devuelve/acepta un seller_contact amplio; el CMS puede mandar solo lo basico.
+    # Campos en null/"" no se envian a MELI (to_meli los filtra).
+    contact: str = ""
     email: str
     phone: str
+    # Opcionales (utiles para desarrollos/franquicias con telefono secundario y web):
+    country_code: str | None = None      # ej. "52"
+    area_code: str | None = None         # ej. "55"
+    phone2: str | None = None
+    country_code2: str | None = None
+    area_code2: str | None = None
+    webpage: str | None = None
+    other_info: str | None = None
 
     def to_meli(self) -> dict:
-        return {"contact": self.contact, "email": self.email, "phone": self.phone}
+        out: dict[str, object] = {
+            "contact": self.contact,
+            "email": self.email,
+            "phone": self.phone,
+        }
+        if self.country_code: out["country_code"] = self.country_code
+        if self.area_code: out["area_code"] = self.area_code
+        if self.phone2: out["phone2"] = self.phone2
+        if self.country_code2: out["country_code2"] = self.country_code2
+        if self.area_code2: out["area_code2"] = self.area_code2
+        if self.webpage: out["webpage"] = self.webpage
+        if self.other_info: out["other_info"] = self.other_info
+        return out
 
 
 class MeliLocation(BaseModel):
@@ -97,6 +119,10 @@ class MeliAttribute(BaseModel):
 class MeliVariation(BaseModel):
     """Unidad de un desarrollo inmobiliario (1 unidad = 1 variacion)."""
 
+    # Al PUBLICAR (POST) el id va en null; MELI lo asigna y lo devuelve.
+    # Al ACTUALIZAR (PUT) el CMS debe mandar el id MELI para que la variacion
+    # se actualice in-place. Sin id, MELI la trata como nueva y la duplica.
+    id: int | None = None
     price: float = Field(..., gt=0)
     attribute_combinations: list[MeliAttribute] = Field(default_factory=list)
     picture_ids: list[str] = Field(default_factory=list)
@@ -109,6 +135,7 @@ class MeliVariation(BaseModel):
             "attribute_combinations": [a.to_meli() for a in self.attribute_combinations],
             "available_quantity": self.available_quantity,
         }
+        if self.id is not None: out["id"] = self.id
         if self.picture_ids: out["picture_ids"] = self.picture_ids
         if self.sku: out["seller_custom_field"] = self.sku
         return out
@@ -127,7 +154,7 @@ class MeliItemCreate(BaseModel):
     condition: Condition = "not_specified"
     channels: list[Channel] = ["marketplace"]
     pictures: list[Picture] = Field(..., min_length=1, description="Obligatorio desde feb 2026 (error 173)")
-    seller_contact: SellerContact
+    seller_contact: SellerContact | None = None
     location: MeliLocation
     attributes: list[MeliAttribute] = Field(default_factory=list)
     variations: list[MeliVariation] = Field(default_factory=list)
@@ -155,11 +182,11 @@ class MeliItemCreate(BaseModel):
             "condition": self.condition,
             "channels": self.channels,
             "pictures": [p.to_meli() for p in self.pictures],
-            "seller_contact": self.seller_contact.to_meli(),
             "location": self.location.to_meli(),
             "attributes": [a.to_meli() for a in self.attributes],
+            "variations": [v.to_meli() for v in self.variations],
         }
-        out["variations"] = [v.to_meli() for v in self.variations]
+        if self.seller_contact is not None: out["seller_contact"] = self.seller_contact.to_meli()
         if self.video_id: out["video_id"] = self.video_id
         if self.official_store_id: out["official_store_id"] = self.official_store_id
         return out

@@ -147,6 +147,9 @@ async def get_status(id_cms: str) -> dict:
             estado=_meli_status_to_estado(meli_status),
             meli_response=_slim_meli_response(resp),
         )
+        # Devolvemos al CMS el estado real + datos utiles para su panel
+        # (permalink/thumbnail para mostrar, fechas para control, metricas,
+        # y bandera de recategorizacion para accionar).
         return {
             "item_id": item_id,
             "status": meli_status,
@@ -154,6 +157,18 @@ async def get_status(id_cms: str) -> dict:
             "category_id": resp.get("category_id"),
             # Verifico si MELI recategorizo (regla oct 2025)
             "recategorized": existing.get("category_id") != resp.get("category_id"),
+            "listing_type_id": resp.get("listing_type_id"),
+            "domain_id": resp.get("domain_id"),
+            "permalink": resp.get("permalink"),
+            "thumbnail": resp.get("thumbnail"),
+            "health": resp.get("health"),
+            "available_quantity": resp.get("available_quantity"),
+            "sold_quantity": resp.get("sold_quantity"),
+            "date_created": resp.get("date_created"),
+            "last_updated": resp.get("last_updated"),
+            "expiration_time": resp.get("expiration_time"),
+            "seller_contact": resp.get("seller_contact"),
+            "variations": resp.get("variations"),
         }
 
 
@@ -186,7 +201,14 @@ def _meli_status_to_estado(s: str | None) -> str:
 
 def _slim_meli_response(resp: dict[str, Any]) -> dict[str, Any]:
     # Solo guardamos campos utiles de la respuesta (no todo el item).
-    keys = ("id", "status", "sub_status", "category_id", "listing_type_id",
-            "start_time", "stop_time", "expiration_time", "permalink",
-            "health", "seller_contact", "variations")
+    # CMS los consume via get_status(); no guardamos internals (seller_address,
+    # deal_ids, item_relations, warnings) que son del vendedor o de control MELI.
+    keys = (
+        "id", "status", "sub_status", "category_id", "listing_type_id",
+        "start_time", "stop_time", "end_time", "expiration_time", "permalink",
+        "thumbnail", "thumbnail_id", "health",
+        "available_quantity", "sold_quantity",
+        "date_created", "last_updated", "domain_id",
+        "seller_contact", "variations",
+    )
     return {k: resp.get(k) for k in keys if k in resp}
